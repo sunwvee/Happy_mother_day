@@ -1,0 +1,95 @@
+html,
+body {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    background: url(../img/happy_birthday.jpg) no-repeat center/ cover;
+
+}
+
+.wrapper {
+    overflow: hidden;
+    font-family: 'Alegreya Sans SC', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height:100%;
+    animation: gradient 3s forwards;
+    position: relative;
+}
+.picture {
+    position: absolute;
+    animation: runLeft 15s, 3s;
+}
+
+.content {
+    background-color:#75cfdf;
+    display: inline block;
+    color: aliceblue;
+    padding: 30px;
+    border-radius: 100px 100px 100px 100px;
+    animation: shift 3s;
+}
+
+.title {
+    font-size: 50px;
+    text-align: center;
+    transform: skew(10deg, 5deg);
+    animation: text-transform 2s alternate infinite linear;
+    color: rgb(255, 246, 119);
+}
+
+.poem {
+    font-size: 25px;
+    font-family: 'Alegreya Sans SC', sans-serif;
+    font-family: 'EB Garamond', serif;
+}
+
+@keyframes shift {
+    0% {
+        transform: translateX(-100vw);
+        opacity: 0;
+    }
+
+
+    50% {
+        transform: scale(0.6) scaleZ(45deg);
+    }
+
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes text-transform {
+    100% {
+        transform: skew(10deg, 10deg);
+    }
+
+}
+
+@keyframes gradient {
+    0% {
+        background: rgba(117, 207, 223)
+    }
+    50% {
+        background: (#518e99);
+    }
+    100% {
+        background: (#a8f2ff);
+    }
+}
+
+@keyframes runLeft {
+    0% {
+        transform: translateX(-100vw);
+    }
+
+    100% {
+        transform: translateX(100vw);
+    }
+}
+
