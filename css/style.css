@@ -5,7 +5,7 @@ body {
 
 body {
     margin: 0;
-    background: url(../img/happy_birthday.jpg) no-repeat center/ cover;
+    background: url(../img/roses_bouquet.jpg) no-repeat center/ cover;
 
 }
 
@@ -25,20 +25,22 @@ body {
 }
 
 .content {
-    background-color:#75cfdf;
+    background-color:#b58688;
     display: inline block;
-    color: aliceblue;
-    padding: 30px;
+    color: #e4cec9;
+    padding: 40px;
     border-radius: 100px 100px 100px 100px;
     animation: shift 3s;
+    opacity: 1;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
 }
 
 .title {
-    font-size: 50px;
+    font-size: 40px;
     text-align: center;
     transform: skew(10deg, 5deg);
-    animation: text-transform 2s alternate infinite linear;
-    color: rgb(255, 246, 119);
+    animation: text-transform 1s alternate infinite linear;
+    color: #bdb3b4;
 }
 
 .poem {
@@ -55,7 +57,7 @@ body {
 
 
     50% {
-        transform: scale(0.6) scaleZ(45deg);
+        transform: perspective(400px) rotateY(30deg);
     }
 
     100% {
@@ -73,13 +75,13 @@ body {
 
 @keyframes gradient {
     0% {
-        background: rgba(117, 207, 223)
+        background: rgba(205, 165, 160);
     }
     50% {
-        background: (#518e99);
+        background: (#856a66);
     }
     100% {
-        background: (#a8f2ff);
+        background: (#ffd6d1);
     }
 }
 
